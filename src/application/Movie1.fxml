@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Movie1Controller">
+   <children>
+      <ImageView fitHeight="669.0" fitWidth="1135.0" layoutX="-35.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Background1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="68.0" layoutY="101.0" prefHeight="80.0" prefWidth="600.0" text="Once Upon a Time in Hollywood" textFill="#5dbad3">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="339.0" layoutY="290.0" prefHeight="250.0" prefWidth="700.0" text="Actor Rick Dalton gained fame and fortune by starring in a 1950s television Western, but is now&#10;struggling to find meaningful work in a Hollywood that he doesn't recognize anymore. He &#10;spends most of his time drinking and palling around with Cliff Booth, his easygoing best friend&#10;and longtime stunt double. Rick also happens to live next door to Roman Polanski and Sharon&#10;Tate -- the filmmaker and budding actress whose futures will forever be altered by members of&#10;the Manson Family.">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <Button fx:id="btnBuyTicket" layoutX="789.0" layoutY="121.0" mnemonicParsing="false" onAction="#BuyTicket" prefHeight="40.0" prefWidth="250.0" text="Buy Ticket" />
+      <ImageView fitHeight="350.0" fitWidth="200.0" layoutX="68.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Movie1.jpg" />
+         </image></ImageView>
+      <Button fx:id="btnBack" layoutX="1025.0" layoutY="645.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+      <Button layoutX="1018.0" layoutY="16.0" mnemonicParsing="false" onAction="#Logout" text="Logout" textFill="#8a0f0f" />
+   </children>
+</AnchorPane>

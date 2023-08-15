@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Movie4Controller">
+   <children>
+      <ImageView fitHeight="654.0" fitWidth="1171.0" layoutX="-61.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Background1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="60.0" layoutY="66.0" prefHeight="150.0" prefWidth="600.0" text="Spider-Man: Far From Home" textFill="#4ab5f8">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnBuyTicket" layoutX="775.0" layoutY="121.0" mnemonicParsing="false" onAction="#BuyTicket" prefHeight="40.0" prefWidth="250.0" text="Buy Ticket" />
+      <TextArea editable="false" layoutX="325.0" layoutY="291.0" prefHeight="250.0" prefWidth="700.0" text="Peter Parker's relaxing European vacation takes an unexpected turn when Nick Fury shows up in&#10;his hotel room to recruit him for a mission. The world is in danger as four massive elemental&#10;creatures -- each representing Earth, air, water and fire -- emerge from a hole torn in the &#10;universe. Parker soon finds himself donning the Spider-Man suit to help Fury and fellow &#10;superhero Mysterio stop the evil entities from wreaking havoc across the continent.">
+         <font>
+            <Font size="16.0" />
+         </font></TextArea>
+      <ImageView fitHeight="273.0" fitWidth="222.0" layoutX="60.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Movie4.jpg" />
+         </image></ImageView>
+      <Button fx:id="btnBack" layoutX="1021.0" layoutY="655.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+      <Button layoutX="1014.0" layoutY="22.0" mnemonicParsing="false" onAction="#Logout" text="Logout" textFill="#971414" />
+   </children>
+</AnchorPane>
